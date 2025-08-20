@@ -9,7 +9,7 @@ const Top_Middle = () => {
       <div className="typing-title">
         <ReactTypingEffect
           text={[
-            "Frontend Developer",
+            "Fullstack Developer",
           ]}
           speed={100}
           eraseSpeed={100}
@@ -22,7 +22,7 @@ const Top_Middle = () => {
         <p>
           I'm currently pursuing a Bachelor's degree in Computer Science and
           Engineering at Guru Tegh Bahardur Institute of Technology. I'm a
-          passionate and driven individual with a zeal to learn and grow.
+          passionate and driven individual with a zeal to learn and grow with an aspiration to become a proficient Software Developer.
         </p>
       </div>
     </div>

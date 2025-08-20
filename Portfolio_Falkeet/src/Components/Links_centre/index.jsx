@@ -3,7 +3,7 @@ import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faDownload, 
-  faEnvelope, 
+  faLightbulb, 
   faCode,
   faBrain,
   faRocket
@@ -14,7 +14,7 @@ const Links_centre = () => {
   const [textIndex, setTextIndex] = useState(0)
   const roles = ['Frontend Developer', 'Team Worker', 'Quick Learner']
   const skills = [
-    'React', 'Node.js', 'TypeScript', 'Python', 'MongoDB', 'AWS'
+    'React', 'Node.js', 'Express.js', 'MongoDB', 'SQL'
   ]
 
   useEffect(() => {
@@ -40,8 +40,13 @@ const Links_centre = () => {
   const features = [
     {
       icon: faCode,
-      title: 'Frontend Development',
+      title: 'Development',
       description: 'Building scalable web applications with modern technologies'
+    },
+    {
+      icon: faLightbulb,
+      title: 'Problem Solver',
+      description: 'Strong analytical skills to tackle complex challenges'
     },
     {
       icon: faBrain,
@@ -70,7 +75,7 @@ const Links_centre = () => {
             </p>
           </div>
 
-          <div className="skills-container">
+          {/* <div className="skills-container">
             <div className="skills-grid">
               {skills.map((skill, index) => (
                 <span key={index} className="skill-tag">
@@ -78,7 +83,7 @@ const Links_centre = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </div> */}
           
           <div className="features-grid">
             {features.map((feature, index) => (

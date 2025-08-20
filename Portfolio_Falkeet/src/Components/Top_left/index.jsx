@@ -5,11 +5,11 @@ const Top_left = () => {
   return (
     <div className="profile-section">
       <div className="profile-image">
-        <img src="public\assets\falkeet-singh.jpg" alt="Profile" />
+        <img src="public\assets\falkeet.jpg" alt="Profile" />
       </div>
       <div className="profile-info">
         <h1>Falket Singh</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Developer</h2>
         <p className="location">📍 Delhi</p>
       </div>
     </div>

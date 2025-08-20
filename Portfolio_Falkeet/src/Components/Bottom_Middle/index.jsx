@@ -3,9 +3,11 @@ import "./index.scss"
 
 const Bottom_Middle = () => {
   const skills = {
-    'Frontend': ['React', 'HTML5', 'CSS3', 'JavaScript'],
-    'Tools': ['Git', 'Figma'],
-    'Languages': ['C++','C'],
+    'Frontend': ['React', 'HTML5', 'CSS3', 'JavaScript','Redux'],
+    'Backend': ['Node.js', 'Express','Supabase', 'Firebase'],
+    'Databases': ['MongoDB', 'MySQL','PostgreSQL'],
+    'Tools': ['Git', 'Figma','Postman', 'VS Code', 'Jira', 'Bitbucket'],
+    'Languages': ['C++','C','Javascript', 'Python'],
   }
 
   return (

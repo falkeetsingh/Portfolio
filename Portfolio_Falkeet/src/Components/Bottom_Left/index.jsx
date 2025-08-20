@@ -4,16 +4,18 @@ import "./index.scss"
 const Bottom_Left = () => {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'A brief description of your first project',
-      tech: ['React', 'Node.js'],
-      link: '#'
+      title: 'E-Commerce Website',
+      description: 'An E-Commerce platform developed with the MERN stack, featuring product listings, cart & checkout system, authentication, and order management. Implements responsive design and efficient database handling for scalability.',
+      tech: ['React', 'Node.js','Express.js', 'MongoDB', 'Redux','Tailwind CSS','Vercel','Render'],
+      link: 'https://ecommerce-store-navy-delta.vercel.app/',
+      github: 'https://github.com/falkeetsingh/Ecommerce-store'
     },
     {
-      title: 'Project 2',
-      description: 'A brief description of your second project',
-      tech: ['TypeScript', 'MongoDB'],
-      link: '#'
+      title: 'Solar System Simulation',
+      description: 'A solar system simulation built with Three.js, showcasing realistic planetary movements and interactions. Utilizes WebGL for rendering and includes interactive features to explore the solar system.',
+      tech: ['Javascript', 'Three.js', 'WebGL', 'HTML', 'CSS'],
+      link: '#',
+      github: 'https://github.com/falkeetsingh/Solar-System'
     }
   ]
 
@@ -30,13 +32,21 @@ const Bottom_Left = () => {
                 <span key={i} className="tech-tag">{tech}</span>
               ))}
             </div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project →
-            </a>
+            <div className="project-links">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                  GitHub
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>
     </div>
+
   )
 }
 
