@@ -14,7 +14,7 @@ const Bottom_Left = () => {
       title: 'Solar System Simulation',
       description: 'A solar system simulation built with Three.js, showcasing realistic planetary movements and interactions. Utilizes WebGL for rendering and includes interactive features to explore the solar system.',
       tech: ['Javascript', 'Three.js', 'WebGL', 'HTML', 'CSS'],
-      link: '#',
+      link: 'https://solar-system-silk-mu.vercel.app/',
       github: 'https://github.com/falkeetsingh/Solar-System'
     }
   ]
