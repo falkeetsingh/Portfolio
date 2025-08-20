@@ -12,7 +12,7 @@ import { GeometricScene } from './GeometricScene'
 
 const Links_centre = () => {
   const [textIndex, setTextIndex] = useState(0)
-  const roles = ['Frontend Developer', 'Team Worker', 'Quick Learner']
+  const roles = ['Developer', 'Team Worker', 'Quick Learner']
   const skills = [
     'React', 'Node.js', 'Express.js', 'MongoDB', 'SQL'
   ]
