@@ -1,0 +1,146 @@
+.projects-page {
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--hover-color);
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    background: var(--accent-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+      .project-overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  .project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &.visit-btn {
+          background: var(--primary-color);
+          color: white;
+
+          &:hover {
+            filter: brightness(0.9);
+          }
+        }
+
+        &.github-btn {
+          background: white;
+          color: black;
+
+          &:hover {
+            background: #f0f0f0;
+          }
+        }
+      }
+    }
+  }
+
+  .project-content {
+    padding: 1.5rem;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .tech-tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--tag-hover);
+      }
+    }
+  }
+} /* <-- Closing bracket for .projects-page */

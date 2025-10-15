@@ -27,7 +27,7 @@ const Links_centre = () => {
 
   const handleDownloadCV = () => {
     // Add your CV download link here
-    const cvLink = 'path-to-your-cv.pdf'
+    const cvLink = 'https://drive.google.com/file/d/1_pYIqqYem1ihuHQ1wwqNdm-TX3PhNCeI/view?usp=sharing'
     window.open(cvLink, '_blank')
   }
 
